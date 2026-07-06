@@ -26,11 +26,11 @@
                  x-transition:enter-start="opacity-0 transform scale-95"
                  x-transition:enter-end="opacity-100 transform scale-100"
                  class="absolute inset-0 w-full h-full">
-                {{-- Corregimos la carga del recurso usando asset() para prevenir imágenes rotas --}}
-                <img src="{{ asset('images/hero-iot.jpg') }}" alt="Ingeniería de Iluminación e Infraestructura IoT" class="w-full h-full object-cover opacity-40">
+                {{-- Ruta apuntando localmente a public/imagenes/ --}}
+                <img src="{{ asset('imagenes/hero-iot.jpeg') }}" alt="Ingeniería de Iluminación e Infraestructura IoT" class="w-full h-full object-cover opacity-40">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-12">
                     <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-2">Soluciones Industriales</span>
-                    <h3 class=\"font-display text-3xl font-bold text-white max-w-2xl\">Monitoreo de Variables Técnicas e Infraestructura Crítica</h3>
+                    <h3 class="font-display text-3xl font-bold text-white max-w-2xl">Monitoreo de Variables Técnicas e Infraestructura Crítica</h3>
                 </div>
             </div>
             
@@ -40,7 +40,8 @@
                  x-transition:enter-start="opacity-0 transform scale-95"
                  x-transition:enter-end="opacity-100 transform scale-100"
                  class="absolute inset-0 w-full h-full" style="display: none;">
-                <img src="{{ asset('images/automation.jpg') }}" alt="Sistemas de Automatización Avanzada" class="w-full h-full object-cover opacity-40">
+                {{-- Ruta apuntando localmente a public/imagenes/ --}}
+                <img src="{{ asset('imagenes/automation.jpg') }}" alt="Sistemas de Automatización Avanzada" class="w-full h-full object-cover opacity-40">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-12">
                     <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-2">Automatización</span>
                     <h3 class="font-display text-3xl font-bold text-white max-w-2xl">Control Eficiente de Consumo de Energía Eléctrica</h3>
@@ -53,7 +54,8 @@
                  x-transition:enter-start="opacity-0 transform scale-95"
                  x-transition:enter-end="opacity-100 transform scale-100"
                  class="absolute inset-0 w-full h-full" style="display: none;">
-                <img src="{{ asset('images/support.jpg') }}" alt="Soporte Técnico de Servidores" class="w-full h-full object-cover opacity-40">
+                {{-- Ruta apuntando localmente a public/imagenes/ --}}
+                <img src="{{ asset('imagenes/support.jpg') }}" alt="Soporte Técnico de Servidores" class="w-full h-full object-cover opacity-40">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex flex-col justify-end p-12">
                     <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 mb-2">Soporte Continuo</span>
                     <h3 class="font-display text-3xl font-bold text-white max-w-2xl">Mantenimiento Preventivo a Servidores y Sistemas de Respaldo</h3>
