@@ -10,9 +10,12 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
-    // Forzamos a Vite a usar rutas base relativas para que no invente "http" o "https"
-    base: '', 
+    // Forzamos rutas relativas sin host
+    base: '',
     server: {
+        host: '0.0.0.0', // Permite que responda dentro del contenedor de Railway
+        port: 8080,      // Lo alineamos al puerto de red que dio Railway
+        strictPort: true,
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
