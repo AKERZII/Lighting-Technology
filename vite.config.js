@@ -11,6 +11,10 @@ export default defineConfig({
         tailwindcss(),
     ],
     server: {
+        
+        hmr: {
+            protocol: 'wss',
+        },
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
